@@ -1,118 +1,66 @@
 body {
-    background: linear-gradient(0deg, #D8E9FB 0%, #D8E9FB 100%),
-                                 lightgray 50% / cover no-repeat;
-    color: #000; 
-    margin: 0;
-    font-family: 'Arial', sans-serif; 
+  background: linear-gradient(0deg, #D8E9FB 0%, #D8E9FB 100%),
+                               lightgray 50% / cover no-repeat;
+  margin: 0;
 }
 
 .tablet-container {
-    background-color: rgba(10, 10, 10, 0.9);
-    border-radius: 50px; 
-    margin: 150px auto; /* Центрирование по горизонтали */
-    max-width: 1000px;
-    padding: 50px;
+  background: rgba(10, 10, 10, 0.9);
+  border-radius: 50px;
+  margin: 5% auto; /* Центрирование по горизонтали */
+  max-width: 80vw; /* Максимальная ширина в 80% от ширины экрана */
+  width: 100%; /* Ширина занимает 100% от родительского контейнера */
+  height: 60vh; /* Высота занимает 60% от высоты экрана */
+  padding: 2vw; /* Внутренний отступ в 2% от ширины экрана */
+  position: relative;
+  box-shadow: inset 0 0 8px rgba(255, 255, 255, 0.879);
+  
 }
 
-/* .tablet-container_small {
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 50px; 
-    margin: 10px auto; 
-    max-width: 800ыpx;
-    padding: 50px;
-} */
+.font-color {
+   color: white;
+   font-family: 'Courier New', Courier, monospace;
 
-.tablet-container_small {
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 50px; 
-    padding: 250px;
+}
+.nav-container {
+  border-radius: 50px;
+  padding: 2vw;
+  position: absolute;
+  bottom: 0;
+  width: 80vw;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-
-nav {
-    background-color: black;
-    
-  }
-  
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-  }
-  
-  li {
-    margin: 0;
-  }
-  
-  a {
-    display: block;
-    padding: 15px 20px;
-    color: white;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    background-color: #333;
-  }
-
-/* header, section, footer {
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8); 
-    border-radius: 10px; 
-    margin: 20px;
-} */
-
-h1, h2 {
-    color:  rgba(255, 255, 255, 0.8);
-    /* #333; */
+.nav-item {
+  background: black;
+  padding: 2vw 4vw; /* Внутренний отступ в 2% от ширины и 4% от высоты экрана */
+  border-radius: 50px;
+  box-shadow: 2px 6px 10px rgba(42, 42, 42, 0.5);
 }
 
+.nav-item a {
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* Медиа-запросы для адаптивного дизайна */
 @media screen and (max-width: 768px) {
-    .tablet-container {
-      margin: 10px auto; /* Центрирование по горизонтали */
-      max-width: 400px; /* Новая максимальная ширина для мобильных устройств */
-    }
-  
-    .tablet-container_small {
-      margin: 5px auto; /* Центрирование по горизонтали */
-      max-width: 300px; /* Новая максимальная ширина для мобильных устройств */
-    }
+  .tablet-container {
+      height: 40vh;
   }
 
-  
-/* .clock {
-    position: absolute;
-    top: 25%;
-    left: 5%;
-    transform: translate(-50%, -50%);
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    background-color: #FC6053;
-    border: 5px solid #000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+  .nav-container {
+      padding: 4vw;
+  }
 
-.hour-hand, .minute-hand, .second-hand {
-    position: absolute;
-    background-color: rgba(255, 255, 255, 0.9); 
-    transform-origin: 50% 100%;
+  .nav-item {
+      padding: 4vw 8vw;
+  }
 }
-
-.hour-hand {
-    height: 50px;
-    width: 5px;
-}
-
-.minute-hand {
-    height: 40px;
-    width: 5px;
-}
-
-.second-hand {
-    height: 45px;
-    width: 1px;
-} */
