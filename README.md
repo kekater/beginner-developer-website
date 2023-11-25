@@ -6,3 +6,4 @@
 * Попросила ИИ накидать шаблон сайта, вот что получилось:
   ![site-template.png](https://github.com/kekater/beginner-developer-website/blob/0de30019615f5fdef84731223ade5cc2c06aac12/site-template.png)
   
+* Получилось накидать планшет, фон. Затык возник с размещением страницы внутри планшета) 
