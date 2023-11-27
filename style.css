@@ -17,7 +17,12 @@ body {
   overflow: auto; /* Добавляем возможность скроллинга */
   }
 
-
+  .home, .projects, .blog{
+    text-align: center;
+    color: #D8E9FB;
+    padding-top: 110px;
+     
+}
   ::-webkit-scrollbar {
     width: 5px;
     height: 10px;
