@@ -17,14 +17,15 @@ body {
   overflow: auto; /* Добавляем возможность скроллинга */
   }
 
+
   ::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
     height: 10px; /* Увеличьте значение высоты */
   }
   
   ::-webkit-scrollbar-thumb {
     background-color: rgba(108, 107, 107, 0.9);
-    border-radius: 10px;
+    border-radius: 100px;
   }
   
   ::-webkit-scrollbar-thumb:hover {
@@ -34,13 +35,21 @@ body {
   ::-webkit-scrollbar-thumb:active {
     background-color: #D8E9FB;
   }
-  ::-webkit-scrollbar-track {
-  /* Добавьте минимальную высоту */
-  min-height: 10px;
-}
+
+  .icons-container {
+    position: relative;
+    bottom: 0;
+    width: 50vw;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   
-
-
+  .icons-container a {
+    margin: 0 20px; /* Добавьте отступы между иконками */
+  }
 
   .content-container {
     padding-top: 20px; /* некоторый отступ сверху */
