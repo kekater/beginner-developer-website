@@ -20,7 +20,7 @@ body {
 
   ::-webkit-scrollbar {
     width: 5px;
-    height: 10px; /* Увеличьте значение высоты */
+    height: 10px;
   }
   
   ::-webkit-scrollbar-thumb {
@@ -48,7 +48,7 @@ body {
   }
   
   .icons-container a {
-    margin: 0 20px; /* Добавьте отступы между иконками */
+    margin: 0 20px; 
   }
 
   .content-container {
