@@ -1,6 +1,5 @@
 body {
-  background: linear-gradient(0deg, #D8E9FB 0%, #D8E9FB 100%),
-                               lightgray 50% / cover no-repeat;
+  background: linear-gradient(0deg, #D8E9FB 0%, #D8E9FB 100%);
   margin: 0;
 }
 
@@ -65,10 +64,6 @@ body {
     width: 250px; /* Размер фотографии */
     height: 250px;
     border-radius: 50%;
-    /*position: absolute;
-    top: 50px; 
-    right: 15px;
-    box-shadow: 0 0 8px rgba(255, 255, 255, 0.879);*/
     float: right; /* Обтекание текстом с левой стороны */
     margin-right: 20px;
 }
@@ -112,6 +107,26 @@ body {
   font-size: 18px;
   font-weight: 700;
   text-decoration: none;
+}
+
+/* .content-wrapper {
+  transition: opacity 0.5s ease-in-out;
+}
+
+.fade-out .content-wrapper {
+  opacity: 0;
+} */
+
+.content-wrapper {
+  transition: transform 0.5s ease-in-out; /* добавляем переход для плавного сдвига */
+}
+
+.slide-left .content-wrapper {
+  transform: translateX(-100%); /* сдвигаем контент влево на 100% от ширины */
+}
+
+.slide-right .content-wrapper {
+  transform: translateX(100%); /* сдвигаем контент вправо на 100% от ширины */
 }
 
 /* Медиа-запросы для адаптивного дизайна */
